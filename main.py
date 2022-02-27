@@ -1,7 +1,7 @@
 import cv2
 
 # Puxando a imagem da webcam
-videoCapture = cv2.VideoCapture(0)
+videoCapture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 # Identificando um rosto
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
